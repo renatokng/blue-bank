@@ -19,6 +19,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.UUID,
       allowNull: false
     },
+     valor:{
+        type: DataTypes.REAL,
+    },
     type: {
       type: DataTypes.ENUM,
       values: ['debito', 'credito']
