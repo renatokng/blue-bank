@@ -14,6 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     cpf:{
         type: DataTypes.INTEGER,
     },
+    senha:{
+        type: DataTypes.INTEGER,
+    },
     conta:{
         type: DataTypes.INTEGER,
     },
