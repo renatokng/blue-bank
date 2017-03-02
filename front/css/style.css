@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#conta{
+    margin-top: 6%;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+.baseInfo{
+    display: flex;
+    justify-content: space-between;
+}

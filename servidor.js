@@ -1,9 +1,9 @@
 'use strict';
 
-const express = require('express')
-const bodyParser = require('body-parser')
-  db = require('./server/config/db.js'),
-  router = require('./server/roteador/rotas');
+const express = require('express');
+const bodyParser = require('body-parser');
+const  db = require('./server/configuracao/db.js');
+const  router = require('./server/roteador/rotas');
 
 const app = express();
 const PORT = process.env.PORT || 8000;

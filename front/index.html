@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html> 
+    <head>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/angular.min.js"></script>
+    </head>       
+    <body ng-app>
+
+    <nav class="nav-extended  light-blue darken-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo logo">Logo</a>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent tabs-fixed-width">
+        <li class="tab"><a href="#test1">Extrato</a></li>
+        <li class="tab"><a href="#test2">Transferencia</a></li>
+      </ul>
+    </div>
+    </nav>
+    <div id="test1" class="col s12">
+    
+    <div class="container">
+  
+        <div class="row">
+          <div class="col s12">
+            <div id="conta" class="card">
+              <div class="card-content">
+                <span class="card-title">Sua Conta</span>
+                <p>Seu Saldo</p>
+                <h4 class="right-align">R$ 540,56</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table>
+        <thead>
+          <tr>
+              <th data-field="id">Data</th>
+              <th data-field="name">Descrição</th>
+              <th data-field="price">Valor</th>
+              <th data-field="price">Tipo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>17/02/2017</td>
+            <td>Deposito para Danilo</td>
+            <td>R$ 200.00</td>
+            <td>Debito</td>
+          </tr>
+        </tbody>
+       </table>
+    </div>
+    
+    </div>
+    <div id="test2" class="col s12">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col s12 m6 l6">
+
+            <div id="conta" class="card">
+              <div class="card-content">
+                <span class="card-title">Sua Conta</span>
+                <p>Seu Saldo</p>
+                <h4 class="right-align">R$ 540.56</h4>
+              </div>
+            </div>
+              <form class="col s12 m12 l12">
+                <div class="row">
+                <div class="input-field col s8">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Conta Destino</label>
+                </div>
+                 <div class="input-field col s4">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Agencia</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Valor</label>
+                </div>
+
+                <button class="btn waves-effect waves-light col s6" type="submit" name="action">Verificar
+                  <i class="material-icons right">send</i>
+                </button>
+                </div>
+                </form>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <div id="conta" class="card">
+              <div class="card-content">
+                <span class="card-title">Conta Destino</span>
+                <p>Nome do Favorecido</p><p>Danilo Alves</p>
+                <div class="baseinfo">
+                <p>Valor da transferencia</p><p>R$ 200.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+              <div class="card">
+                <div class="card-content">
+                  <p>Transferencia para</p><br>
+                  <p> Danilo Alves</p>
+                </div>
+                <div class="card-content baseInfo">
+                  <button class="btn waves-effect waves-light col s6" type="submit" name="action">Confirmar
+                  <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+               $(".button-collapse").sideNav();
+               $('ul.tabs').tabs();
+               })
+      </script>
+    </body>
+  </html>

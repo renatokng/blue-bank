@@ -24,9 +24,20 @@ module.exports = (app, db) => {
   // POST salvar um correntista
   app.post('/correntista', (req, res) => {
     const name = req.body.name;
+    const cpf  = req.body.cpf;
+    const senha  = req.body.senha;
+    const conta  = req.body.conta;
+    const agencia  = req.body.agencia;
+    const saldo = req.body.saldo;
     const role = req.body.role;
-    db.correntista.create({
+
+    db.correntistas.create({
       name: name,
+      cpf: cpf,
+      senha: senha,
+      conta: conta,
+      agencia: agencia,
+      saldo: saldo,
       role: role
     })
       .then(newCorrent => {

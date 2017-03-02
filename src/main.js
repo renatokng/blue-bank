@@ -7,9 +7,16 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 
 Vue.use(VueMaterial)
+
 Vue.material.registerTheme('default', {
-  primary: 'blue',
-  accent: 'blue-grey',
+  primary: {
+    color: 'light-blue',
+    hue: 600
+  },
+  accent:{
+    color: 'teal',
+    hue: 'A200'
+  },
   warn: 'red',
   background: 'white'
 })
